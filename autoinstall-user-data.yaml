@@ -1,0 +1,19 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: es_ES.UTF-8
+  keyboard:
+    layout: es
+  timezone: Europe/Madrid
+
+  network:
+    version: 2
+    ethernets:
+      enp1s0:
+        dhcp4: true
+
+  identity:
+    username: alvaro
+    hostname: alvaro
+    password:
+'$6$C1sULPrUJ2tlDuGO$Nwj5wpm3g.41B/SdkfPpQjuu5Ivr/xa4bE.yIw1G50aSrOsi0G/iAEvRkoxl.lg9MSs7QARI81nkL/1msEZxy1'
